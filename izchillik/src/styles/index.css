@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root,
+[data-theme='obsidian'] {
+  --color-bg: 9 11 16;
+  --color-surface: 17 21 30;
+  --color-surface-alt: 13 16 24;
+  --color-surface-hover: 26 32 46;
+  --color-border: 28 35 51;
+  --color-text-primary: 241 245 249;
+  --color-text-secondary: 203 213 225;
+  --color-text-muted: 130 143 163;
+  --color-accent: 59 130 246;
+  --color-accent-hover: 37 99 235;
+}
+
+[data-theme='midnight'] {
+  --color-bg: 7 15 21;
+  --color-surface: 13 25 34;
+  --color-surface-alt: 10 20 28;
+  --color-surface-hover: 20 38 52;
+  --color-border: 25 48 64;
+  --color-text-primary: 236 253 245;
+  --color-text-secondary: 186 218 214;
+  --color-text-muted: 118 152 162;
+  --color-accent: 16 185 129;
+  --color-accent-hover: 5 150 105;
+}
+
+[data-theme='light'] {
+  --color-bg: 244 246 250;
+  --color-surface: 255 255 255;
+  --color-surface-alt: 248 250 252;
+  --color-surface-hover: 238 242 247;
+  --color-border: 222 228 238;
+  --color-text-primary: 15 23 42;
+  --color-text-secondary: 51 65 85;
+  --color-text-muted: 100 116 139;
+  --color-accent: 37 99 235;
+  --color-accent-hover: 29 78 216;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
